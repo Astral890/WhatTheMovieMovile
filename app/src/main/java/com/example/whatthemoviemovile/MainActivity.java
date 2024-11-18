@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         bt_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, select_genre.class);
+                Intent intent=new Intent(MainActivity.this, select_gen.class);
                 startActivity(intent);
             }
         });
