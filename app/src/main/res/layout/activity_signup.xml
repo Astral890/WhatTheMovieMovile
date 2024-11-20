@@ -10,13 +10,15 @@
         android:id="@+id/textCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
         android:text="Crea tu cuenta"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
 
     <TextView
         android:id="@+id/textSubtitle"
@@ -26,9 +28,11 @@
         android:text="Llena los siguientes datos"
         android:textColor="#D8D8D8"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textCreateAccount" />
+        app:layout_constraintTop_toBottomOf="@id/textCreateAccount"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputUsername"
@@ -52,6 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#2B2B2B"
             android:hint="Usuario"
             android:inputType="textEmailAddress"
             android:padding="12dp"
@@ -80,6 +85,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#2B2B2B"
             android:hint="Correo Electronico"
             android:inputType="textEmailAddress"
             android:padding="12dp"
@@ -108,6 +114,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#2B2B2B"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:padding="12dp"
@@ -120,7 +127,7 @@
         android:id="@+id/btnCreateAccount"
         android:layout_width="303dp"
         android:layout_height="53dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#E53935"
         android:text="Crear Cuenta"
         android:textColor="#FFFFFF"
