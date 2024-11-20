@@ -32,8 +32,8 @@ public class Movie {
         this.title = title;
     }
 
-    public String[] getImages() {
-        return images;
+    public String getImages(int i) {
+        return images[i];
     }
 
     public void setImages(String[] images) {
@@ -46,6 +46,10 @@ public class Movie {
 
     public void setCont(int cont) {
         this.cont = cont;
+    }
+
+    public int getLong(){
+        return images.length;
     }
 
     public void addImages(String url){
