@@ -24,6 +24,7 @@
         android:id="@+id/imgDisplay"
         android:layout_width="248dp"
         android:layout_height="150dp"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

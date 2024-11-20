@@ -1,9 +1,11 @@
 package com.example.whatthemoviemovile;
 
+import static com.example.whatthemoviemovile.utilis.Utils.getArrMix;
 import static com.example.whatthemoviemovile.utilis.Utils.rand;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -39,6 +41,7 @@ public class Scifi extends AppCompatActivity {
     private StringRequest stringRequest;
     private final String url_api="https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=878&api_key=ada074b6a5691631b70bfbcaf68ebad9";
     private final int win=rand();
+    private int tr=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +52,7 @@ public class Scifi extends AppCompatActivity {
         requestMovieData();
         new Thread(() -> {
             try {
-                Thread.sleep(50);
+                Thread.sleep(1500);
                 runOnUiThread(() -> {
                     requestImages(win);
                 });
@@ -61,6 +64,38 @@ public class Scifi extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        display.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Glide.with(Scifi.this).load(movies.get(win).getImages(tr++)).into(display);
+            }
+        });
+
+        op1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(checkWin(op1.getText().toString())){
+                    tv.setText("Ganaste");
+                }
+            }
+        });
+        op2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(checkWin(op2.getText().toString())){
+                    tv.setText("Ganaste");
+                }
+            }
+        });
+        op3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(checkWin(op3.getText().toString())){
+                    tv.setText("Ganaste");
+                }
+            }
         });
     }
     public void init(){
@@ -104,9 +139,10 @@ public class Scifi extends AppCompatActivity {
                 ));
             }
             if(!movies.isEmpty()){
-                op1.setText(movies.get(0).getTitle());
-                op2.setText(movies.get(1).getTitle());
-                op3.setText(movies.get(2).getTitle());
+                int[] arr=getArrMix();
+                op1.setText(movies.get(arr[0]).getTitle());
+                op2.setText(movies.get(arr[1]).getTitle());
+                op3.setText(movies.get(arr[2]).getTitle());
             }else{
                 tv.setText("xd");
             }
@@ -158,5 +194,12 @@ public class Scifi extends AppCompatActivity {
 
     public void showToast(String msg){
         Toast.makeText(context,msg,Toast.LENGTH_SHORT).show();
+    }
+
+    public boolean checkWin(String title){
+        if(title.equals(movies.get(win).getTitle())){
+            return true;
+        }
+        return false;
     }
 }
