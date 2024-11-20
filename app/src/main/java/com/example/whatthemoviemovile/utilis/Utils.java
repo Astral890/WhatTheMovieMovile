@@ -23,4 +23,8 @@ public class Utils {
         }
     }
 
+    public static int getRandMovies(){
+        Random random=new Random();
+        return random.nextInt(20);
+    }
 }

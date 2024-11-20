@@ -132,7 +132,7 @@ public class Scifi extends AppCompatActivity {
     private void fetchData(JSONArray jsonArray){
         try {
             for (int i=0;i<3;i++) {
-                JSONObject movieData = jsonArray.getJSONObject(i);
+                JSONObject movieData = jsonArray.getJSONObject(getRandMovies());
                 movies.add(new Movie(
                         movieData.getInt("id"),
                         movieData.getString("title")
