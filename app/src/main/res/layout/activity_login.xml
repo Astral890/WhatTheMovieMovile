@@ -37,23 +37,34 @@
         android:layout_marginTop="8dp" />
 
     <!-- Username Field -->
+
+    <!-- Password Field -->
+
+    <!-- Forgot Password Text -->
+
+    <!-- Login Button -->
+
+    <!-- Login with Google -->
+
+    <!-- Bottom Logo -->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputUsername"
         android:layout_width="303dp"
         android:layout_height="53dp"
-        app:boxBackgroundMode="filled"
-        app:boxCornerRadiusTopStart="15dp"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusBottomStart="15dp"
-        app:boxCornerRadiusBottomEnd="15dp"
+        android:layout_marginTop="84dp"
         app:boxBackgroundColor="#121212"
-        app:hintTextColor="#D8D8D8"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
         app:boxStrokeColor="#D8D8D8"
         app:boxStrokeWidth="2dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:hintTextColor="#D8D8D8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textSubtitle"
-        android:layout_marginTop="16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSubtitle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextUsername"
@@ -66,24 +77,23 @@
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Password Field -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputPassword"
         android:layout_width="303dp"
         android:layout_height="53dp"
-        app:boxBackgroundMode="filled"
-        app:boxCornerRadiusTopStart="15dp"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusBottomStart="15dp"
-        app:boxCornerRadiusBottomEnd="15dp"
+        android:layout_marginTop="32dp"
         app:boxBackgroundColor="#121212"
-        app:hintTextColor="#D8D8D8"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
         app:boxStrokeColor="#D8D8D8"
         app:boxStrokeWidth="2dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:hintTextColor="#D8D8D8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textInputUsername"
-        android:layout_marginTop="16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputUsername">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextPassword"
@@ -97,25 +107,17 @@
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Forgot Password Text -->
-
-    <!-- Login Button -->
-
-    <!-- Login with Google -->
-
-    <!-- Bottom Logo -->
-
     <TextView
         android:id="@+id/textForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="¿Olvidaste tu contraseña?"
         android:textColor="#D8D8D8"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintHorizontal_bias="0.792"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textInputPassword" />
 
@@ -123,7 +125,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="303dp"
         android:layout_height="53dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="92dp"
         android:backgroundTint="#E53935"
         android:text="Iniciar Sesion"
         android:textColor="#FFFFFF"
@@ -151,7 +153,7 @@
         android:id="@+id/imageViewLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
