@@ -9,33 +9,47 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="167dp"
-        android:layout_height="260dp"
-        app:srcCompat="@drawable/scifi"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="25dp" />
+        android:layout_width="196dp"
+        android:layout_height="319dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/scifi" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="206dp"
-        android:layout_height="263dp"
-        app:srcCompat="@drawable/comedy"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="22dp" />
+        android:layout_width="257dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/comedy" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="373dp"
-        android:layout_height="178dp"
-        app:srcCompat="@drawable/animada"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="299dp" />
+        android:layout_width="414dp"
+        android:layout_height="207dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532"
+        app:srcCompat="@drawable/animada" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="345dp"
-        android:layout_height="228dp"
-        app:srcCompat="@drawable/horror"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="487dp" />
+        android:layout_width="363dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916"
+        app:srcCompat="@drawable/horror" />
 </androidx.constraintlayout.widget.ConstraintLayout>
