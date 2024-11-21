@@ -8,7 +8,6 @@
     android:background="@drawable/bgall">
 
     <ImageView
-<<<<<<< HEAD
         android:id="@+id/scifi"
         android:layout_width="167dp"
         android:layout_height="0dp"
@@ -64,50 +63,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scifi"
-=======
-        android:id="@+id/imageView6"
-        android:layout_width="196dp"
-        android:layout_height="319dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"
-        app:srcCompat="@drawable/scifi" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="257dp"
-        android:layout_height="320dp"
-        android:layout_marginStart="188dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"
-        app:srcCompat="@drawable/comedy" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="414dp"
-        android:layout_height="207dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.532"
-        app:srcCompat="@drawable/animada" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="363dp"
-        android:layout_height="242dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916"
->>>>>>> 4301b65d9694c109213f84a3e0b3e7c41f427628
         app:srcCompat="@drawable/horror" />
 </androidx.constraintlayout.widget.ConstraintLayout>
