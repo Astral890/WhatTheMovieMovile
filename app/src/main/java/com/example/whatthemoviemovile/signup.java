@@ -2,6 +2,7 @@ package com.example.whatthemoviemovile;
 
 import static android.content.ContentValues.TAG;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -38,20 +39,18 @@ public class signup extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        TextView sing=findViewById(R.id.sign);
-        EditText usr=findViewById(R.id.usuario);
-        EditText email=findViewById(R.id.email);
-        EditText pass=findViewById(R.id.pass);
+        EditText usr=findViewById(R.id.editTextUsuario);
+        EditText email=findViewById(R.id.editTextCorreo);
+        EditText pass=findViewById(R.id.editTextContraseña);
         Button crear=findViewById(R.id.crear);
-
-        Map<String, Object> user=new HashMap<>();
-        user.put("usuario",usr.getText().toString());
-        user.put("email",email.getText().toString());
-        user.put("pass",pass.getText().toString());
 
         crear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Map<String, Object> user=new HashMap<>();
+                user.put("usuario",String.valueOf(usr.getText()));
+                user.put("email",String.valueOf(email.getText()));
+                user.put("pass",String.valueOf(pass.getText()));
                 db.collection("UsrMovies")
                         .add(user)
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
@@ -66,6 +65,8 @@ public class signup extends AppCompatActivity {
                                 Log.w(TAG, "Error adding document", e);
                             }
                         });
+                Intent intent =new Intent(signup.this, login.class);
+                startActivity(intent);
             }
         });
     }

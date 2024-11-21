@@ -3,6 +3,7 @@ package com.example.whatthemoviemovile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +28,7 @@ public class select_gen extends AppCompatActivity {
         ImageView comedy=findViewById(R.id.comedy);
         ImageView animated=findViewById(R.id.animated);
         ImageView horror=findViewById(R.id.horror);
+        Button btSingUp=findViewById(R.id.btnSignUp);
         scifi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,6 +54,13 @@ public class select_gen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(select_gen.this, animated.class);
+                startActivity(intent);
+            }
+        });
+        btSingUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(select_gen.this, signup.class);
                 startActivity(intent);
             }
         });
