@@ -7,24 +7,36 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgall">
 
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="166dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Crear Cuenta"
+        android:textColor="#121212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textForgotPassword" />
+
     <ImageView
         android:id="@+id/scifi"
         android:layout_width="167dp"
         android:layout_height="0dp"
-        android:layout_marginStart="14dp"
         android:layout_marginTop="25dp"
-        android:layout_marginBottom="202dp"
         android:clickable="true"
         android:contentDescription="asd"
-        app:layout_constraintBottom_toTopOf="@+id/horror"
-        app:layout_constraintStart_toStartOf="@+id/animated"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/scifi" />
+        app:srcCompat="@drawable/scifi"
+        tools:layout_editor_absoluteX="33dp" />
 
     <ImageView
         android:id="@+id/comedy"
-        android:layout_width="206dp"
-        android:layout_height="0dp"
+        android:layout_width="232dp"
+        android:layout_height="275dp"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="14dp"
@@ -52,8 +64,8 @@
 
     <ImageView
         android:id="@+id/horror"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="375dp"
+        android:layout_height="259dp"
         android:layout_marginStart="33dp"
         android:layout_marginEnd="33dp"
         android:layout_marginBottom="16dp"
@@ -61,7 +73,24 @@
         android:contentDescription="asd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scifi"
+        app:layout_constraintVertical_bias="0.627"
         app:srcCompat="@drawable/horror" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#E53935"
+        android:text="Iniciar Sesión"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textForgotPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
