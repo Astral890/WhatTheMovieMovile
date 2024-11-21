@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -35,11 +36,12 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("com.squareup.picasso:picasso:2.8")
-    implementation("com.android.volley:volley:1.2.1")
+    implementation(libs.glide)
+    implementation(libs.picasso)
+    implementation(libs.volley)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.google.android.material:material:1.9.0")
+    implementation(libs.material.v190)
 }
