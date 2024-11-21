@@ -39,8 +39,8 @@
         android:id="@+id/scifi"
         android:layout_width="167dp"
         android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
         android:clickable="true"
         android:contentDescription="asd"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,8 +49,8 @@
 
     <ImageView
         android:id="@+id/comedy"
-        android:layout_width="232dp"
-        android:layout_height="275dp"
+        android:layout_width="254dp"
+        android:layout_height="307dp"
         android:clickable="true"
         android:contentDescription="asd"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,13 +58,13 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054"
+        app:layout_constraintVertical_bias="0.111"
         app:srcCompat="@drawable/comedy" />
 
     <ImageView
         android:id="@+id/animated"
-        android:layout_width="373dp"
-        android:layout_height="91dp"
+        android:layout_width="510dp"
+        android:layout_height="177dp"
         android:clickable="true"
         android:contentDescription="asd"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -76,15 +76,16 @@
 
     <ImageView
         android:id="@+id/horror"
-        android:layout_width="275dp"
-        android:layout_height="160dp"
+        android:layout_width="377dp"
+        android:layout_height="223dp"
         android:clickable="true"
         android:contentDescription="asd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793"
+        app:layout_constraintVertical_bias="0.865"
         app:srcCompat="@drawable/horror" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
