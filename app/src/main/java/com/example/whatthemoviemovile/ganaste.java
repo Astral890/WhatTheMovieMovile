@@ -1,8 +1,9 @@
 package com.example.whatthemoviemovile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,11 +23,12 @@ public class ganaste extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Button bt1=findViewById(R.id.bt1);
+        ImageView bt1=findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                Intent intent=new Intent(ganaste.this,select_gen.class);
+                startActivity(intent);
             }
         });
     }

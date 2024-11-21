@@ -24,10 +24,34 @@ public class select_gen extends AppCompatActivity {
             return insets;
         });
         ImageView scifi=findViewById(R.id.scifi);
+        ImageView comedy=findViewById(R.id.comedy);
+        ImageView animated=findViewById(R.id.animated);
+        ImageView horror=findViewById(R.id.horror);
         scifi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(select_gen.this, Scifi.class);
+                startActivity(intent);
+            }
+        });
+        comedy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(select_gen.this, comedy.class);
+                startActivity(intent);
+            }
+        });
+        horror.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(select_gen.this, horror.class);
+                startActivity(intent);
+            }
+        });
+        animated.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(select_gen.this, animated.class);
                 startActivity(intent);
             }
         });
