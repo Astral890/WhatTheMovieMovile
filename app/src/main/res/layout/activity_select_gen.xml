@@ -8,75 +8,34 @@
     android:background="@drawable/bgall">
 
     <ImageView
-        android:id="@+id/scifi"
-        android:layout_width="144dp"
-        android:layout_height="278dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035"
-        app:srcCompat="@drawable/scifimenu" />
+        android:id="@+id/imageView6"
+        android:layout_width="167dp"
+        android:layout_height="260dp"
+        app:srcCompat="@drawable/scifi"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="25dp" />
 
     <ImageView
-        android:id="@+id/comedy"
-        android:layout_width="141dp"
-        android:layout_height="141dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259"
-        app:srcCompat="@drawable/comedy" />
+        android:id="@+id/imageView7"
+        android:layout_width="206dp"
+        android:layout_height="263dp"
+        app:srcCompat="@drawable/comedy"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="22dp" />
 
     <ImageView
-        android:id="@+id/disney"
-        android:layout_width="150dp"
-        android:layout_height="214dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.968"
-        app:srcCompat="@drawable/disney" />
+        android:id="@+id/imageView8"
+        android:layout_width="373dp"
+        android:layout_height="178dp"
+        app:srcCompat="@drawable/animada"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="299dp" />
 
     <ImageView
-        android:id="@+id/horror"
-        android:layout_width="157dp"
-        android:layout_height="215dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.837"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972"
-        app:srcCompat="@drawable/horror" />
-
-    <ImageView
-        android:id="@+id/animated"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549"
-        app:srcCompat="@drawable/animada" />
-
-    <ImageView
-        android:id="@+id/romance"
-        android:layout_width="145dp"
-        android:layout_height="134dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.827"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
-        app:srcCompat="@drawable/roro" />
-
+        android:id="@+id/imageView9"
+        android:layout_width="345dp"
+        android:layout_height="228dp"
+        app:srcCompat="@drawable/horror"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="487dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
