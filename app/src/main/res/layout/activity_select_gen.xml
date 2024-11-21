@@ -7,138 +7,84 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgall">
 
+
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="166dp"
         android:layout_height="63dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginBottom="36dp"
         android:backgroundTint="#FFFFFF"
         android:text="Crear Cuenta"
         android:textColor="#121212"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textForgotPassword" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
 
     <ImageView
         android:id="@+id/scifi"
         android:layout_width="167dp"
         android:layout_height="0dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:clickable="true"
         android:contentDescription="asd"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/scifi"
-        tools:layout_editor_absoluteX="33dp" />
+        app:srcCompat="@drawable/scifi" />
 
     <ImageView
         android:id="@+id/comedy"
         android:layout_width="232dp"
         android:layout_height="275dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="14dp"
         android:clickable="true"
         android:contentDescription="asd"
-        app:layout_constraintBottom_toTopOf="@+id/animated"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054"
         app:srcCompat="@drawable/comedy" />
 
     <ImageView
         android:id="@+id/animated"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="373dp"
+        android:layout_height="91dp"
         android:clickable="true"
         android:contentDescription="asd"
-        app:layout_constraintBottom_toTopOf="@+id/horror"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/comedy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539"
         app:srcCompat="@drawable/animada" />
 
     <ImageView
         android:id="@+id/horror"
-        android:layout_width="375dp"
-        android:layout_height="259dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="275dp"
+        android:layout_height="160dp"
         android:clickable="true"
         android:contentDescription="asd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.566"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scifi"
-<<<<<<< Updated upstream
-        app:layout_constraintVertical_bias="0.627"
-=======
-=======
-        android:id="@+id/imageView6"
-        android:layout_width="196dp"
-        android:layout_height="319dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"
-        app:srcCompat="@drawable/scifi" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="257dp"
-        android:layout_height="320dp"
-        android:layout_marginStart="188dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"
-        app:srcCompat="@drawable/comedy" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="414dp"
-        android:layout_height="207dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.739"
-        app:srcCompat="@drawable/animada" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="363dp"
-        android:layout_height="242dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">>>>>>> 4301b65d9694c109213f84a3e0b3e7c41f427628
->>>>>>> Stashed changes
+        app:layout_constraintVertical_bias="0.793"
         app:srcCompat="@drawable/horror" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="165dp"
         android:layout_height="60dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginBottom="36dp"
         android:backgroundTint="#E53935"
         android:text="Iniciar Sesión"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintEnd_toEndOf="@+id/animated"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textForgotPassword" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
 </androidx.constraintlayout.widget.ConstraintLayout>
