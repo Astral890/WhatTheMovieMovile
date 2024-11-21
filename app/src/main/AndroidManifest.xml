@@ -15,6 +15,15 @@
         android:theme="@style/Theme.WhatTheMovieMovile"
         tools:targetApi="31">
         <activity
+            android:name=".animated"
+            android:exported="false" />
+        <activity
+            android:name=".horror"
+            android:exported="false" />
+        <activity
+            android:name=".comedy"
+            android:exported="false" />
+        <activity
             android:name=".ganaste"
             android:exported="false" />
         <activity
