@@ -36,130 +36,23 @@
         app:layout_constraintTop_toBottomOf="@id/textCreateAccount" />
 
     <!-- Button: Create Account -->
-    <LinearLayout
-        android:id="@+id/inputGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textSubtitle"
-        app:layout_constraintVertical_bias="0.13">
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputUsername"
-            android:layout_width="303dp"
-            android:layout_height="53dp"
-            android:layout_marginBottom="16dp"
-            app:boxBackgroundColor="#121212"
-            app:boxBackgroundMode="filled"
-            app:boxCornerRadiusBottomEnd="15dp"
-            app:boxCornerRadiusBottomStart="15dp"
-            app:boxCornerRadiusTopEnd="15dp"
-            app:boxCornerRadiusTopStart="15dp"
-            app:boxStrokeColor="#D8D8D8"
-            app:boxStrokeWidth="2dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/usuario"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Usuario"
-                android:inputType="text"
-                android:padding="12dp"
-                android:textColor="#D8D8D8"
-                android:textColorHint="#D8D8D8"
-                android:textSize="16sp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/intEmail"
-            android:layout_width="303dp"
-            android:layout_height="53dp"
-            android:layout_marginBottom="16dp"
-            app:boxBackgroundColor="#121212"
-            app:boxBackgroundMode="filled"
-            app:boxCornerRadiusBottomEnd="15dp"
-            app:boxCornerRadiusBottomStart="15dp"
-            app:boxCornerRadiusTopEnd="15dp"
-            app:boxCornerRadiusTopStart="15dp"
-            app:boxStrokeColor="#D8D8D8"
-            app:boxStrokeWidth="2dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Correo Electronico"
-                android:inputType="textEmailAddress"
-                android:padding="12dp"
-                android:textColor="#D8D8D8"
-                android:textColorHint="#D8D8D8"
-                android:textSize="16sp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/intPass"
-            android:layout_width="303dp"
-            android:layout_height="53dp"
-            app:boxBackgroundColor="#121212"
-            app:boxBackgroundMode="filled"
-            app:boxCornerRadiusBottomEnd="15dp"
-            app:boxCornerRadiusBottomStart="15dp"
-            app:boxCornerRadiusTopEnd="15dp"
-            app:boxCornerRadiusTopStart="15dp"
-            app:boxStrokeColor="#D8D8D8"
-            app:boxStrokeWidth="2dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/pass"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:padding="12dp"
-                android:textColor="#D8D8D8"
-                android:textColorHint="#D8D8D8"
-                android:textSize="16sp" />
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
 
     <Button
         android:id="@+id/crear"
         android:layout_width="303dp"
         android:layout_height="53dp"
-        android:layout_marginTop="24dp"
         android:backgroundTint="#E53935"
         android:text="Crear Cuenta"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputGroup" />
+        tools:layout_editor_absoluteY="469dp" />
 
     <!-- Text: Already have an account -->
 
     <!-- Link: Sign In -->
 
     <!-- Logo -->
-
-    <TextView
-        android:id="@+id/sign"
-        android:layout_width="151dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="194dp"
-        android:clickable="true"
-        android:contentDescription="boton"
-        android:text="Tienes una cuenta? "
-        android:textColor="#FFFFFF"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/inputGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageViewLogo"
@@ -171,5 +64,41 @@
         app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2B2B2B"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Usuario"
+        android:textColor="#d8d8d8"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2B2B2B"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Correo Electronico"
+        android:textColor="#d8d8d8"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <EditText
+        android:id="@+id/editTextContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2B2B2B"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Contraseña"
+        android:textColor="#d8d8d8"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="380dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
