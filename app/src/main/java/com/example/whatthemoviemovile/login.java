@@ -25,6 +25,5 @@ public class login extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        TextView sing=findViewById(R.id.sign);
     }
 }
