@@ -16,6 +16,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/btnPuntos"
+            android:layout_width="165dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="228dp"
+            android:backgroundTint="#E53935"
+            android:text="Mis puntos"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/animated"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976" />
+
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
