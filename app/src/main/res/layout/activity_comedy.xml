@@ -2,7 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
     android:id="@+id/comedy"
+=======
+    android:id="@+id/scifi"
+>>>>>>> 4301b65d9694c109213f84a3e0b3e7c41f427628
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgall"
@@ -13,6 +17,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="68dp"
         android:layout_marginEnd="164dp"
         android:fontFamily="@font/awakenning"
@@ -21,6 +26,18 @@
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+        android:fontFamily="@font/awakenning"
+        android:text="COMEDY"
+        android:textColor="#930D0D"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+>>>>>>> 4301b65d9694c109213f84a3e0b3e7c41f427628
 
     <Button
         android:id="@+id/op1"
@@ -95,12 +112,31 @@
         android:layout_width="255dp"
         android:layout_height="333dp"
         android:clickable="true"
+<<<<<<< HEAD
         android:contentDescription="fotos"
+=======
+>>>>>>> 4301b65d9694c109213f84a3e0b3e7c41f427628
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19"
         app:srcCompat="@drawable/imagencarga" />
+<<<<<<< HEAD
+=======
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#930D0D"
+        android:hint="puntos"
+        android:textColor="#d8d8d8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+>>>>>>> 4301b65d9694c109213f84a3e0b3e7c41f427628
 
 </androidx.constraintlayout.widget.ConstraintLayout>
