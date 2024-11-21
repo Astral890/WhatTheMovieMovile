@@ -8,19 +8,32 @@
     android:background="@drawable/bgall">
 
 
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="166dp"
-        android:layout_height="63dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="Crear Cuenta"
-        android:textColor="#121212"
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnPuntos"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="228dp"
+        android:backgroundTint="#E53935"
+        android:text="Mis puntos"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/animated"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     <ImageView
         android:id="@+id/scifi"
@@ -74,17 +87,4 @@
         app:layout_constraintVertical_bias="0.793"
         app:srcCompat="@drawable/horror" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="165dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#E53935"
-        android:text="Iniciar Sesión"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/animated"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.946" />
 </androidx.constraintlayout.widget.ConstraintLayout>
