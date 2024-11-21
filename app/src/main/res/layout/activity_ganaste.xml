@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/win"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ganaste">
@@ -22,9 +23,9 @@
         android:id="@+id/imageView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/textura"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="143dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15"
+        app:srcCompat="@drawable/textura" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -75,12 +76,15 @@
         app:srcCompat="@drawable/effect" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/bt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/btt"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="303dp" />
+        android:layout_marginTop="29dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/btt" />
 
     <TextView
         android:id="@+id/textView"

@@ -1,14 +1,15 @@
 package com.example.whatthemoviemovile;
 
 import static com.example.whatthemoviemovile.utilis.Utils.getArrMix;
+import static com.example.whatthemoviemovile.utilis.Utils.getRandMovies;
 import static com.example.whatthemoviemovile.utilis.Utils.rand;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -32,7 +33,6 @@ import java.util.List;
 
 public class Scifi extends AppCompatActivity {
 
-    private TextView tv;
     private ImageView display;
     private Button op1, op2, op3;
     private Context context;
@@ -54,7 +54,7 @@ public class Scifi extends AppCompatActivity {
             try {
                 Thread.sleep(1500);
                 runOnUiThread(() -> {
-                    requestImages(win);
+                    requestImages();
                 });
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -76,34 +76,36 @@ public class Scifi extends AppCompatActivity {
         op1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent=new Intent(Scifi.this, ganaste.class);
                 if(checkWin(op1.getText().toString())){
-                    tv.setText("Ganaste");
+                    startActivity(intent);
                 }
             }
         });
         op2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent=new Intent(Scifi.this, ganaste.class);
                 if(checkWin(op2.getText().toString())){
-                    tv.setText("Ganaste");
+                    startActivity(intent);
                 }
             }
         });
         op3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent=new Intent(Scifi.this, ganaste.class);
                 if(checkWin(op3.getText().toString())){
-                    tv.setText("Ganaste");
+                    startActivity(intent);
                 }
             }
         });
     }
     public void init(){
-        tv=findViewById(R.id.tv12);
         op1=findViewById(R.id.op1);
         op2=findViewById(R.id.op2);
         op3=findViewById(R.id.op3);
-        display=findViewById(R.id.imgDisplay);
+        display=findViewById(R.id.display);
         context=Scifi.this;
     }
     public void requestMovieData(){
@@ -112,7 +114,7 @@ public class Scifi extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONObject jsonObject = new JSONObject(response.toString());
+                    JSONObject jsonObject = new JSONObject(response);
                     JSONArray jsonArray=jsonObject.getJSONArray("results");
                     fetchData(jsonArray);
                 } catch (Exception e) {
@@ -143,8 +145,6 @@ public class Scifi extends AppCompatActivity {
                 op1.setText(movies.get(arr[0]).getTitle());
                 op2.setText(movies.get(arr[1]).getTitle());
                 op3.setText(movies.get(arr[2]).getTitle());
-            }else{
-                tv.setText("xd");
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -153,14 +153,14 @@ public class Scifi extends AppCompatActivity {
 
     }
 
-    public void requestImages(int pos){
+    public void requestImages(){
         int id=movies.get(win).getId();
         requestQueue= Volley.newRequestQueue(context);
         stringRequest=new StringRequest("https://api.themoviedb.org/3/movie/"+id+"/images?api_key=ada074b6a5691631b70bfbcaf68ebad9", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONObject jsonObject = new JSONObject(response.toString());
+                    JSONObject jsonObject = new JSONObject(response);
                     JSONArray jsonArray=jsonObject.getJSONArray("backdrops");
                     fillImages(jsonArray);
                 } catch (Exception e) {
@@ -197,9 +197,6 @@ public class Scifi extends AppCompatActivity {
     }
 
     public boolean checkWin(String title){
-        if(title.equals(movies.get(win).getTitle())){
-            return true;
-        }
-        return false;
+        return title.equals(movies.get(win).getTitle());
     }
 }

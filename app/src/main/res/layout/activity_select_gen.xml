@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/scifimenu" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/comedy"
         android:layout_width="141dp"
         android:layout_height="141dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/comedy" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/disney"
         android:layout_width="150dp"
         android:layout_height="214dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/disney" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/horror"
         android:layout_width="157dp"
         android:layout_height="215dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +56,7 @@
         app:srcCompat="@drawable/horror" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/animated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +68,7 @@
         app:srcCompat="@drawable/animada" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/romance"
         android:layout_width="145dp"
         android:layout_height="134dp"
         app:layout_constraintBottom_toBottomOf="parent"
