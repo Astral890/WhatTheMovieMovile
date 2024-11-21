@@ -48,7 +48,7 @@
         android:layout_width="270dp"
         android:layout_height="53dp"
         android:background="#1A1919"
-        android:hint="Usuario"
+        android:hint="Correo"
         android:padding="12dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#D8D8D8"

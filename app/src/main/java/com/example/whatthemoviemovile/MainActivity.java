@@ -3,6 +3,7 @@ package com.example.whatthemoviemovile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         ImageView bt_main=findViewById(R.id.bt1);
+        Button btSingUp=findViewById(R.id.btnSignUp);
+        Button btLogin=findViewById(R.id.btnLogin);
         bt_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,5 +34,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btSingUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, signup.class);
+                startActivity(intent);
+            }
+        });
+        btLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, login.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
