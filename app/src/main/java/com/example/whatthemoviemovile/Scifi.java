@@ -49,6 +49,8 @@ public class Scifi extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_scifi);
         init();
+        Intent intent=getIntent();
+        String UsrEmail=intent.getStringExtra("UsrEmail");
         requestMovieData();
         new Thread(() -> {
             try {
@@ -78,6 +80,7 @@ public class Scifi extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(Scifi.this, ganaste.class);
                 if(checkWin(op1.getText().toString())){
+                    intent.putExtra("UsrEmail",UsrEmail);
                     startActivity(intent);
                 }
             }
@@ -87,6 +90,7 @@ public class Scifi extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(Scifi.this, ganaste.class);
                 if(checkWin(op2.getText().toString())){
+                    intent.putExtra("UsrEmail",UsrEmail);
                     startActivity(intent);
                 }
             }
@@ -96,6 +100,7 @@ public class Scifi extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(Scifi.this, ganaste.class);
                 if(checkWin(op3.getText().toString())){
+                    intent.putExtra("UsrEmail",UsrEmail);
                     startActivity(intent);
                 }
             }

@@ -51,6 +51,7 @@ public class signup extends AppCompatActivity {
                 user.put("usuario",String.valueOf(usr.getText()));
                 user.put("email",String.valueOf(email.getText()));
                 user.put("pass",String.valueOf(pass.getText()));
+                user.put("points","0");
                 db.collection("UsrMovies")
                         .add(user)
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {

@@ -19,6 +19,8 @@ public class select_gen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_select_gen);
+        Intent intent=getIntent();
+        String UsrEmail=intent.getStringExtra("UsrEmail");
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.select), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -28,10 +30,12 @@ public class select_gen extends AppCompatActivity {
         ImageView comedy=findViewById(R.id.comedy);
         ImageView animated=findViewById(R.id.animated);
         ImageView horror=findViewById(R.id.horror);
+        Button btnPuntos=findViewById(R.id.btnPuntos);
         scifi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(select_gen.this, Scifi.class);
+                intent.putExtra("UsrEmail",UsrEmail);
                 startActivity(intent);
             }
         });
@@ -56,6 +60,13 @@ public class select_gen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        btnPuntos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(select_gen.this,activity_puntos.class);
+                intent.putExtra("UsrEmail",UsrEmail);
+                startActivity(intent);
+            }
+        });
     }
 }

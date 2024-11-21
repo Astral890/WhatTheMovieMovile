@@ -2,11 +2,25 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/pt"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgall"
     tools:context=".activity_puntos">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="228dp"
+        android:backgroundTint="#E53935"
+        android:text="Volver al menú"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     <TextView
         android:id="@+id/textView2"
@@ -60,7 +74,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/ViewPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/gabrielsanscond"

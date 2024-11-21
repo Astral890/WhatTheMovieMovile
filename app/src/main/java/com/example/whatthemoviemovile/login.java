@@ -1,5 +1,6 @@
 package com.example.whatthemoviemovile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,8 +48,12 @@ public class login extends AppCompatActivity {
                             for(QueryDocumentSnapshot document: task.getResult()){
                                 String UsrEmail=document.getString("email");
                                 String UsrPass=document.getString("pass");
+                                String UsrPuntos=document.getString("points");
                                 if(UsrEmail.equals(correo.getText().toString())&&UsrPass.equals(pass.getText().toString())){
                                     showToast("Login exitoso");
+                                    Intent intent = new Intent(login.this, select_gen.class);
+                                    intent.putExtra("UsrEmail",UsrEmail);
+                                    startActivity(intent);
                                     return;
                                 }
                             }
